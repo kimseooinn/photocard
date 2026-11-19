@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Card Idols: photocards de K-pop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;600&family=Dela+Gothic+One&family=Silkscreen:wght@700&family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="promo">Novos clientes: 50% off no primeiro pedido, até R$ 15,00, com o cupom BEMVINDO50. Frete grátis acima de R$ 150.</div>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#topo">Card Idols</a>
+    <button class="bag" id="bag" type="button"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 7h12l1 13H5L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><span>Sacola</span><b class="badge" id="bagCount" hidden>0</b></button>
+  </div>
+</header>
+
+<main id="topo">
+  <div class="adwrap" id="adWrap">
+    <a class="ad" href="https://youtu.be/Pksr9T8m_aA?si=_8MIU_c2lpOdINXW" target="_blank" rel="noopener noreferrer" aria-label="Assistir ao novo clipe da Jisoo no YouTube">
+      <video id="adVideo" src="videos/clipe-jisoo.mp4" poster="imagens/clipe-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>
+      <span class="adtxt"><span class="adtag">Anúncio</span><strong>Novo clipe da Jisoo</strong><span>Assista agora no YouTube</span><span class="adbtn">Assistir</span></span>
+    </a>
+    <button class="adx" id="adClose" type="button" aria-label="Fechar anúncio">×</button>
+  </div>
+  <div class="wrap hero">
+    <div>
+      <h1>Photocards de K-pop para completar a sua coleção</h1>
+      <p>Addicted da Jisoo, BLACKPINK, IVE e ILLIT em cards de álbum, lucky draws e edições exclusivas. Cada um vai em sleeve e toploader, e a foto do anúncio é do card que você recebe.</p>
+      <div class="cta"><a class="btn" href="#addicted">Ver Addicted</a><a class="btn ghost" href="#blackpink">Ver BLACKPINK</a><a class="btn ghost" href="#ive">Ver IVE</a><a class="btn ghost" href="#illit">Ver ILLIT</a></div>
+    </div>
+    <div class="stage">
+      <button class="hero-card" id="heroCard" type="button" aria-label="Photocard exclusivo Addicted: ver na loja"><span class="exbadge">Exclusivo</span></button>
+    </div>
+  </div>
+
+  <section class="addicted" id="addicted">
+    <div class="wrap">
+      <div class="intro addintro">
+        <div>
+          <div class="head"><h2>Addicted</h2><i class="starico" aria-hidden="true"></i></div>
+          <p>Photocards especiais e exclusivos da Jisoo.</p>
+        </div>
+        <button class="clip" type="button" data-clip="add" aria-label="Assistir ao clipe do Addicted no YouTube" title="Assistir ao clipe"><img id="addFoto" class="grp" alt="Capa da categoria Addicted" width="640" height="576"><span class="play" aria-hidden="true"></span></button>
+      </div>
+      <p class="note">Toque em um card para ver o verso.</p>
+      <div class="filters" id="add-filters" role="group" aria-label="Filtrar Addicted por integrante"></div>
+      <div class="grid" id="add-grid"></div>
+    </div>
+  </section>
+
+  <section id="blackpink">
+    <div class="wrap">
+      <div class="intro">
+        <div>
+          <h2>BLACKPINK: Deadline</h2>
+          <p>Cards do álbum Deadline, com Jisoo, Jennie, Rosé e Lisa.</p>
+        </div>
+        <figure class="bpfig">
+          <button class="clip" type="button" data-clip="bp" aria-label="Assistir ao clipe do BLACKPINK no YouTube" title="Assistir ao clipe"><img id="bpFoto" class="grp" alt="Foto de grupo do BLACKPINK" width="640" height="716"><span class="play" aria-hidden="true"></span></button>
+        </figure>
+      </div>
+      <p class="note">Toque em um card para ver o verso.</p>
+      <div class="filters" id="bp-filters" role="group" aria-label="Filtrar BLACKPINK por integrante"></div>
+      <div class="grid" id="bp-grid"></div>
+    </div>
+  </section>
+
+  <section class="ive" id="ive">
+    <div class="wrap">
+      <div class="intro iveintro">
+        <div>
+          <div class="head"><h2>IVE: Looks Can Kill</h2><i class="starico" aria-hidden="true"></i></div>
+          <p>Cards do álbum Looks Can Kill, com Wonyoung, Yujin, Liz, Rei, Leeseo e Gaeul.</p>
+        </div>
+        <button class="clip" type="button" data-clip="ive" aria-label="Assistir ao clipe do IVE no YouTube" title="Assistir ao clipe"><img id="iveFoto" class="grp" alt="Foto de grupo do IVE" width="735" height="490"><span class="play" aria-hidden="true"></span></button>
+      </div>
+      <p class="note">Toque em um card para ver o verso.</p>
+      <div class="filters" id="ive-filters" role="group" aria-label="Filtrar IVE por integrante"></div>
+      <div class="grid" id="ive-grid"></div>
+    </div>
+  </section>
+  <section class="illit" id="illit">
+    <div class="wrap">
+      <div class="intro">
+        <div>
+          <h2>ILLIT</h2>
+          <p>Cards do ILLIT. Um monstro de pixels anda pegando cards por aí, e o da Moka foi um deles. Salve a Moka para liberar o card dela.</p>
+        </div>
+        <button class="clip" type="button" data-clip="illit" aria-label="Assistir ao clipe do ILLIT no YouTube" title="Assistir ao clipe"><img id="illitPhoto" class="grp" alt="Foto de grupo do ILLIT" width="360" height="360"><span class="play" aria-hidden="true"></span></button>
+      </div>
+      <p class="note">Toque em um card para ver o verso.</p>
+      <div class="filters" id="illit-filters" role="group" aria-label="Filtrar ILLIT por integrante"></div>
+      <div class="grid" id="illit-grid"></div>
+    </div>
+  </section>
+  <p class="sr" id="live" aria-live="polite"></p>
+
+  <section>
+    <div class="wrap facts">
+      <div><h3>Protegido em cada envio</h3><p>Sleeve, toploader e um envelope rígido. Nenhum card viaja solto.</p></div>
+      <div><h3>Estado descrito com clareza</h3><p>Lacrado, novo ou com marca de uso: está escrito no anúncio. Se vier diferente, você troca.</p></div>
+      <div><h3>Rastreio em todo pedido</h3><p>Você recebe o código de rastreio assim que o pedido é postado.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Card Idols. Pedidos e dúvidas pelo <a href="https://wa.me/5513996080810?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Card%20Idols." target="_blank" rel="noopener noreferrer">WhatsApp (13) 99608-0810</a> ou pelo <a href="https://www.instagram.com/kimseooinn?bqrl=MWwxdGpoYjhoNjRnNA==" target="_blank" rel="noopener noreferrer">Instagram @kimseooinn</a>.</span>
+    <span>Loja independente, sem vínculo com as agências dos artistas.</span>
+  </div>
+</footer>
+
+<dialog id="clipDialog" class="dlg" aria-labelledby="clipTit">
+  <h2 id="clipTit">Assistir ao clipe do <span id="clipNome"></span>?</h2>
+  <p>Você vai sair da Card Idols e abrir o YouTube em outra aba.</p>
+  <div class="dact"><a id="clipGo" class="btn" href="#" target="_blank" rel="noopener noreferrer">Assistir no YouTube</a><button id="clipNo" class="btn ghost" type="button">Agora não</button></div>
+</dialog>
+
+<dialog id="drawer" class="drawer" aria-labelledby="dTit">
+  <div class="dpanel">
+    <div class="dh"><h2 id="dTit">Sua sacola</h2><button id="dClose" class="x" type="button" aria-label="Fechar sacola">×</button></div>
+    <div class="dbody">
+      <p id="drawerEmpty" class="empty">Sua sacola está vazia. Escolha um card no catálogo.</p>
+      <ul id="drawerList" class="lis"></ul>
+    </div>
+    <div id="drawerFoot" class="dfoot" hidden>
+      <div><p id="shipTxt" class="mini"></p><span class="bar"><span id="shipBar"></span></span></div>
+      <p id="packTxt" class="mini"></p>
+      <div class="cup"><input id="cupom" placeholder="Cupom de desconto" aria-label="Cupom de desconto" autocomplete="off"><button id="cupomBtn" type="button" class="btn ghost">Aplicar</button></div>
+      <p id="cupomMsg" class="mini" role="status"></p>
+      <div id="drawerSum"></div>
+      <button id="goCheckout" class="btn full" type="button">Finalizar compra</button>
+      <p class="demo">Demonstração: nenhum pagamento é cobrado.</p>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="checkout" class="co" aria-labelledby="coTit">
+  <div class="cohead"><button id="coBack" class="lnk" type="button">‹ Voltar à sacola</button><strong id="coTit">Finalizar compra</strong><span></span></div>
+  <p class="demobar">Modo demonstração: nenhum pagamento é processado e nenhum dado é enviado ou salvo.</p>
+  <div class="cogrid" id="coMain">
+    <form id="coForm" novalidate>
+      <button id="coFill" class="lnk" type="button">Preencher com dados de exemplo</button>
+      <fieldset><legend>Contato</legend><div id="fContato"></div></fieldset>
+      <fieldset><legend>Entrega</legend><div id="fEntrega"></div></fieldset>
+      <fieldset><legend>Frete</legend><div id="fFrete"></div></fieldset>
+      <fieldset><legend>Pagamento</legend>
+        <label class="opt"><input type="radio" name="pag" value="pix" checked><span><b>Pix</b><small>Aprovação na hora</small></span></label>
+        <label class="opt"><input type="radio" name="pag" value="cartao"><span><b>Cartão de crédito</b><small>Até 3x sem juros</small></span></label>
+        <div id="cartaoBox" hidden><div id="fCartao"></div><label class="f"><span>Parcelas</span><select id="f_parc"></select></label></div>
+      </fieldset>
+      <button class="btn full" type="submit">Finalizar pedido</button>
+    </form>
+    <aside id="coSum" class="cosum"></aside>
+  </div>
+  <section id="coPix" class="cobox" hidden>
+    <h2>Pague com Pix</h2>
+    <p>Em uma compra real, você copiaria o código abaixo e pagaria no app do seu banco. Aqui, use o botão para simular o pagamento.</p>
+    <div class="pixrow"><input id="pixCode" readonly aria-label="Código Pix de demonstração"><button id="pixCopy" class="btn ghost" type="button">Copiar</button></div>
+    <p id="pixTotal" class="big"></p>
+    <button id="pixPaid" class="btn full" type="button">Simular pagamento</button>
+    <button id="pixBack" class="lnk" type="button">Voltar</button>
+  </section>
+  <section id="coDone" class="cobox" hidden>
+    <h2>Pedido confirmado</h2>
+    <p id="doneTxt"></p>
+    <div id="doneSum"></div>
+    <p class="demo">Este foi um pedido de demonstração: nenhum pagamento foi cobrado e nenhum produto será enviado.</p>
+    <button id="doneBtn" class="btn full" type="button">Continuar comprando</button>
+  </section>
+  <div id="coBusy" class="busy" hidden><span class="spin"></span><p>Processando pagamento...</p></div>
+</dialog>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="sacola.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
